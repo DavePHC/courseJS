@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color:honeydew;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #200494;
+    overflow: hidden;
+}
+
+h1 {
+    margin-top: 10%;
+    margin-bottom: 50px;
+}
+
+.love {
+    border-radius: 50%;
+    box-shadow: 0px 18px 34px 8px rgba(248, 209, 53, 0.2);
+    width: 400px;
+    height: 400px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/love.jpg) no-repeat top center / cover;
+}
