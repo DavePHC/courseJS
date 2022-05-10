@@ -175,3 +175,21 @@ console.log(border);
 // }
 
 // console.log(counter);
+
+const arr = ['a', 'b', 'c'];
+
+console.log(arr[1]);
+
+const arrObj = {
+    0: 'a',
+    1: 'b',
+    2: 'c'
+};
+
+// arrObj['a'] = 'hi';
+
+let a;
+
+arrObj[a] = 'hi';
+
+console.log(arrObj.a);
