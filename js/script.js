@@ -193,3 +193,12 @@ let a;
 arrObj[a] = 'hi';
 
 console.log(arrObj.a);
+
+// Logical operators
+
+const beer = true,
+      hamburger = true;
+
+if (beer && hamburger) {
+    console.log('Бургеров возьмём, пивка, посмеёмся, и всем проблемам пиздец');
+}      
