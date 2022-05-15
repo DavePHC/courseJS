@@ -232,10 +232,84 @@ first: for (let i = 0; i < 3; i++) {
 
 {
    const lines = 6;
-   const result = '';
+   let result = '';
 
-   for (let i = 0; i < lines; i++) {
-       
+   for (let i = 1; i < lines * 2; i++) {
+
+        if (i % 2 === 0) {
+            continue;
+        }
+        for (let j = 0; j < i; j++) {
+            result += "*";
+        }
+        result += '\n';
    }
+
+   console.log(result);
+//    console.log(arr);
 }
 
+{
+
+    const lines = 5;
+    let result = '';
+
+    for (let i = 0; i <= lines; i++) {
+        for (let j = 0; j < lines - i; j++) {
+            result += " ";
+        }
+        for (let j = 0; j < 2 * i - 1; j++) {
+            result += "*";
+        }
+        result += "\n";
+    }
+
+    console.log(result);
+   
+}
+
+// function sayHello(name) {
+//     return console.log(`Привет ${name}!`);
+// }
+// sayHello('Дима');
+
+
+function returnNeighboringNumbers(num) {
+    
+    let arr = [num -1, num, num + 1];
+    
+    return arr;
+
+}
+
+console.log(returnNeighboringNumbers(8));
+
+function getMathResult(base, progress) {
+
+    if (typeof(progress) !== 'number' || progress <= 0) {
+        return base;
+    } else {
+        let str = '';
+        for (let i = 1; i <= progress; i++) {
+            if (i === progress) {
+                str += `${base * i}`;
+            } else {
+                str += `${base * i}---`;
+            }
+            
+        }
+        return str;
+    }
+}
+
+console.log(getMathResult(5, 2));
+
+function returnNeighboringNumbers(num) {
+    let arr = [];
+    
+    arr[0] = num - 1;
+    arr[1] = num;
+    arr[2] = num + 1;
+
+    return arr;
+}
