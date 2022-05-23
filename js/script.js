@@ -38,8 +38,8 @@ function detectPersonalLevel(){
 
 function rememberMyFilms() {
     for (let i = 0; i < 2; i++) {
-        const question = prompt('Один из последних просмотренных фильмов?', ''),
-              answer = prompt('На сколько оцените его?', '');
+        const question = prompt('Один из последних просмотренных фильмов?', '').trim(),
+              answer = prompt('На сколько оцените его?', '').trim();
     
         if (question != null && answer != null && question != '' && answer != '' && question.length < 50) {
             personalMovieDB.movies[question] = answer;
