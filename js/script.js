@@ -313,3 +313,68 @@ function returnNeighboringNumbers(num) {
 
     return arr;
 }
+
+
+const obj = {
+    name: "Dima",
+    age: 28,
+    color: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('test');
+    }
+}
+
+obj.makeTest();
+
+console.log(Object.keys(obj).length);
+
+// Удаление свойства из объекта
+
+// delete obj.name;
+
+let counter = 0;
+
+for (let key in obj) {
+    if (typeof(obj[key]) === 'object') {
+        for (let i in obj[key]) {
+            console.log(`Свойство ${i}, имеет значение ${obj[key][i]}`);
+        }
+    } else {
+        console.log(`Свойство ${key}, имеет значение ${obj[key]}`);
+        counter++
+    }
+}
+
+console.log(counter);
+
+
+const mass = [1, 2, 3, 4, 5];
+
+// mass[99] = 0;
+
+// console.log(mass.length);
+
+mass.forEach(function(item, i, mass) {
+    console.log(`${i}: ${item} внутри массива ${mass}`);
+});
+
+// mass.push(10);
+
+// console.log(mass);
+
+for (let i = 0; i < mass.length; i++) {
+    console.log(mass[i]);
+}
+
+for (let j of mass ) {
+    console.log(j);
+}
+
+const str = prompt("","");
+
+const prod = str.split(", ");
+
+console.log(prod);
