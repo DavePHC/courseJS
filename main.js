@@ -128,8 +128,18 @@
 
 // Упрожнение по объектам и массивам #14
 
-const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
+// const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
 
-function sortStudentsByGroups(arr) {
+// function sortStudentsByGroups(arr) {
 
-}
+// }
+
+// function getCoupeNumber(seat) {
+//     if (typeof seat !== "number" || !Number.isInteger(seat) || seat < 0) {
+//         return console.log( 'Ошибка. Проверьте правильность введенного номера места')
+//     } else if (seat < 1 || seat > 36) {
+//         return console.log( 'Таких мест в вагоне не существует')
+//     } else {
+//         return console.log( Math.ceil(seat / 4))
+//     }
+// }
